@@ -2,10 +2,15 @@
 
 class Mahasiswa extends CI_Controller {
 
+  public function __construct()
+  {
+    parent::__construct();
+
+    $this->load->model('Mahasiswa_Model');
+  }
+
   public function index()
   {
-    $this->load->model('Mahasiswa_Model');
-
     $data['judul_halaman'] = 'Daftar Mahasiswa';
     $data['daftar_mahasiswa'] = $this->Mahasiswa_Model->getSemuaMahasiswa();
 
