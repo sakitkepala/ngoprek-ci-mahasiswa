@@ -25,7 +25,7 @@ class Mahasiswa extends CI_Controller {
     $data['judul_halaman'] = 'Tambah Mahasiswa';
 
     $this->form_validation->set_rules('nama', 'Nama Mahasiswa', 'required');
-    $this->form_validation->set_rules('nim', 'NIM', 'required');
+    $this->form_validation->set_rules('nim', 'NIM', 'required|numeric');
     $this->form_validation->set_rules('jurusan', 'Jurusan', 'required');
 
     if ( $this->form_validation->run() == FALSE )

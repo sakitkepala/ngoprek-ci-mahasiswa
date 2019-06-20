@@ -8,6 +8,11 @@
         </div>
 
         <div class="card-body">
+          <?php if ( validation_errors() ): ?>
+          <div class="alert alert-warning" role="alert">
+            <?= validation_errors();?>
+          </div>
+          <?php endif; ?>
           <form method="post" action="">
             <div class="form-group">
               <label for="nama">Nama</label>
@@ -22,7 +27,7 @@
             <div class="form-group">
               <label for="jurusan">Jurusan</label>
               <select class="form-control" id="jurusan" name="jurusan">
-                <option selected>Buka menu seleksi</option>
+                <!-- <option selected>Buka menu seleksi</option> -->
                 <option value="Multimedia">Multimedia</option>
                 <option value="Teknik Informatika">Teknik Informatika</option>
                 <option value="DKV">DKV</option>
