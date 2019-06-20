@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row mt-3">
     <div class="col-md-6">
-      <a class="btn btn-primary" href="">Tambahkan Mahasiswa</a>
+      <a class="btn btn-primary" href="<?=base_url();?>mahasiswa/tambah">Tambahkan Mahasiswa</a>
     </div>
   </div>
 
