@@ -36,7 +36,8 @@ class Mahasiswa extends CI_Controller {
     }
     else
     {
-      echo 'berhasil tambah data';
+      $this->Mahasiswa_Model->tambahDataMahasiswa();
+      redirect('mahasiswa');
     }
 
   }
